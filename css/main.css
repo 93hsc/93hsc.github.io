@@ -526,7 +526,7 @@ pre code {
 }
 .highlight table {
   margin: 0;
-  width: auto;
+  width: 100%;
   border: none;
 }
 .highlight td {
@@ -560,7 +560,9 @@ pre code {
   padding-right: 20px;
 }
 .highlight .line {
-  height: 20px;
+/*height:20px;*/
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 .gist table {
   width: auto;
@@ -1034,6 +1036,20 @@ pre .javascript .function {
 }
 .posts-expand {
   padding-top: 40px;
+}
+.posts-expand ol li strong {
+  color: #f00;
+}
+.posts-expand em {
+  color: #ffa500;
+}
+.posts-expand .post-body a {
+  color: #0684bd;
+  border-color: #0684bd;
+}
+.posts-expand .post-body a:hover {
+  color: #fc6423;
+  border-color: #fc6423;
 }
 @media (max-width: 767px) {
   .posts-expand {
@@ -1549,7 +1565,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #283671;
+  background: #ff9475;
 }
 .links-of-blogroll {
   font-size: 13px;

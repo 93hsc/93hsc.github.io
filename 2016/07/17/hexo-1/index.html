@@ -1,0 +1,687 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="hexo部署," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="开始我们的hexo之旅。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo部署">
+<meta property="og:url" content="http://yoursite.com/2016/07/17/hexo-1/index.html">
+<meta property="og:site_name" content="一个人的凌晨">
+<meta property="og:description" content="开始我们的hexo之旅。">
+<meta property="og:image" content="http://yoursite.com/images/hexo-build-1.png">
+<meta property="og:image" content="http://yoursite.com/images/hexo-build-2.png">
+<meta property="og:image" content="http://yoursite.com/images/hexo-build-3.png">
+<meta property="og:updated_time" content="2016-07-17T11:12:43.381Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo部署">
+<meta name="twitter:description" content="开始我们的hexo之旅。">
+<meta name="twitter:image" content="http://yoursite.com/images/hexo-build-1.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6307948732021212000,
+      author: 'Death'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/07/17/hexo-1/"/>
+
+  <title> hexo部署 | 一个人的凌晨 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <!-- <div class="headband"></div> -->
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">一个人的凌晨</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'PUZU8r37zsw9Pp9V1mx_','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                hexo部署
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-17T15:52:05+08:00" content="2016-07-17">
+              2016-07-17
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/hexo部署/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo部署</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>开始我们的hexo之旅。<br><a id="more"></a><br>原文：<a href="http://www.chinaz.com/web/2016/0419/523442.shtml" target="_blank" rel="external">5分钟 搭建免费个人博客</a></p>
+<h1 id="创建Github-域名和空间"><a href="#创建Github-域名和空间" class="headerlink" title="创建Github 域名和空间"></a>创建Github 域名和空间</h1><h2 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h2><p>首先你需要注册一个Github账号，已有的可以下翻去<strong>1.2创建仓库</strong>，注意username，这会影响到你的域名，你的域名将会是 username.github.io ，所以认真的取个名字吧。<br><img src="/images/hexo-build-1.png" alt="创建github帐号"><br>注册过程可能需要验证你的邮箱，其他就不在赘述。</p>
+<h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>然后需要创建一个仓库(repository) 来存储我们的网站，点击首页任意位置出现的 New repository按钮创建仓库, Respository name 中的username.github.io 的username 一定与前面的Owner 一致，记住你的username下面会用到。<br><img src="/images/hexo-build-2.png" alt="创建github仓库"><br>第一步就已经完成了，下面是安装。<br><strong>注：</strong>相关网站建设技巧阅读请移步到建站教程频道。<a href="http://jingyan.baidu.com/article/b907e627d3c1d546e7891ceb.html" target="_blank" rel="external">Github如何创建项目仓库_百度经验</a></p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>Hexo 可以说是目前最流行的博客框架了，基于Nodejs，更多信息可以google，下面需要安装的工具包括 Git，Nodejs，Hexo。（Windows 用户自行搜索这些工具，直接安装即可，试过基本没啥问题）</p>
+<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>git安装没什么技巧，下载完成之后自行安装，一般使用默认选项。<br><a href="https://www.git-scm.com/download/" target="_blank" rel="external">git下载地址</a></p>
+<h2 id="安装Nodejs"><a href="#安装Nodejs" class="headerlink" title="安装Nodejs"></a>安装Nodejs</h2><p>先安装nvm，这是Nodejs版本管理器，可以轻松切换Nodejs版本。</p>
+<h3 id="nvm的安装"><a href="#nvm的安装" class="headerlink" title="nvm的安装"></a>nvm的安装</h3><p>window的nvm安装：<a href="http://blog.csdn.net/tyro_java/article/details/51232458" target="_blank" rel="external">nodejs在windows下的安装配置(使用NVM的方式)</a></p>
+<ol>
+<li>首先确保你的网络畅通，还有不被墙，如果需要翻墙，请看：<br><a href="https://github.com/getlantern/lantern" target="_blank" rel="external">https://github.com/getlantern/lantern</a></li>
+<li>下载 nvm 包 地址：<a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank" rel="external">https://github.com/coreybutler/nvm-windows/releases</a>，我们选择第一个：nvm-noinstall.zip 下载完成后解压到一个地方，比如: D:\mynode\nvm 里面的文件列表是这样的：<strong>elevate.cmd</strong>、<strong>elevate.vbs</strong>、<strong>install.cmd</strong>、<strong>LICENSE</strong>、<strong>nvm.exe</strong></li>
+<li>备注：windows下要设置显示文件类型的扩展名，这样才能看到上述文件的后缀</li>
+<li>双击 install.cmd 然后会让你输入“压缩文件解压或拷贝到的一个绝对路径” 先不用管它，直接回车，成功后，会在C盘的根目录生成一个settings.txt的文本文件，把这个文件剪切到D:\mynode\nvm<em>（当然了，你可以放到你喜欢的任意目录下，然后对照你的目录修改下面的路径）</em>目录中，然后我们把它的内容修改成这样：<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">root: D:\mynode\nvm </div><div class="line">path: D:\mynode\nodejs </div><div class="line">arch: 64 </div><div class="line">proxy: none</div></pre></td></tr></table></figure></li>
+<li>然后我们开始配置环境变量了（右键我的电脑-高级系统设置-环境变量），因为刚刚点击了install.cmd的文件，那么会在环境变量的系统变量中，生成两个环境变量：<code>NVM_HOME</code> 和 <code>NVM_SYMLINK</code> 我们开始修改这两个变量名的变量值：<code>NVM_HOME</code>的变量值为：<code>D:\mynode\nvm</code>； <code>NVM_SYMLINK</code>的变量值为：<code>D:\mynode\nodejs</code><br><img src="/images/hexo-build-3.png" alt="设置环境变量"></li>
+<li>我们还会发现，在Path中也会自动添加上D:\mynode\nvm;或者是D:\mynode\nodejs，如果有的话，把他们删掉，没有的话更好，我们自己来配置，在Path的最前面输入：<code>;%NVM_HOME%;%NVM_SYMLINK%;</code></li>
+<li>打开一个cmd窗口输入命令：<code>nvm v</code> ，那么我们会看到当前nvm的版本信息。然后我们可以安装nodejs了。</li>
+<li>继续输入命令：<code>nvm install latest</code> 如果网络畅通，我们会看到正在下载的提示，下载完成后 会让你use那个最新的node版本。</li>
+<li>如果你是第一次下载，在use之前，D:\mynode目录下是没有nodejs这个文件夹的，在输入比如： nvm use 6.3.0 之后，你会发现，D:\mynode目录下多了一个nodejs文件夹，这个文件夹不是单纯的文件夹，它是一个快捷方式，指向了 D:\mynode\nvm 里的 v6.3.0 文件夹。</li>
+<li>同样的咱们可以下载其他版本的nodejs，这样通过命令:<code>nvm use</code> 版本号 比如：<code>nvm use 6.3.0</code>就可以轻松实现版本切换了。</li>
+<li>备注： 如果你的电脑系统是32 位的，那么在下载nodejs版本的时候，一定要指明 32 如： <code>nvm install 6.3.0 32</code> 这样在32位的电脑系统中，才可以使用，默认是64位的。</li>
+</ol>
+<h3 id="npm的安装"><a href="#npm的安装" class="headerlink" title="npm的安装"></a>npm的安装</h3><ol>
+<li>首先我们进入命令模式，输入 <code>npm config set prefix &quot;D:\mynode\nvm\npm&quot;</code> 回车，这是在配置npm的全局安装路径，然后在用户文件夹下会生成一个.npmrc的文件，用记事本打开后可以看到如下内容：<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">prefix=D:\mynode\nvm\npm</div></pre></td></tr></table></figure></li>
+<li>然后继续在命令中输入： <code>npm install npm -g</code> 回车后会发现正在下载npm包，在D:\mynode\nvm\npm目录中可以看到下载中的文件，以后我们只要用npm安装包的时候加上 -g 就可以把包安装在我们刚刚配置的全局路径下了。</li>
+<li>我们为这个npm配置环境变量： 变量名为：<code>NPM_HOME</code>，变量值为 ：<code>D:\mynode\nvm\npm</code></li>
+<li>在Path的最前面添加<code>;%NPM_HOME%</code>，注意了，这个一定要添加在 <code>%NVM_SYMLINK%</code>之前，所以我们直接把它放到Path的最前面</li>
+<li>最后我们新打开一个cmd命令窗口，输入<code>npm -v</code> ,此时我们使用的就是我们统一下载的npm包了。</li>
+</ol>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>以上所有都安装完成之后再安装Hexo<br>打开<strong>Git Bash</strong>，输入以下代码：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure><br>所有必须工具已经安装完成，下面我们就可以生成博客，上传至我们的Github 仓库了。</p>
+<h1 id="编写，发布"><a href="#编写，发布" class="headerlink" title="编写，发布"></a>编写，发布</h1><p>接下来我们需要用Hexo初始化一个博客，然后更改一些自定义的配置，或者加上自己喜欢的主题，写上第一篇文章，然后发布到自己的个人Github网站(username.github.io)。</p>
+<h2 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a>创建博客</h2><p>将下面的 username 替换成你自己的username(其实也无所谓，作者强迫症)<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ hexo init username.github.io</div></pre></td></tr></table></figure></p>
+<h2 id="更改配置"><a href="#更改配置" class="headerlink" title="更改配置"></a>更改配置</h2><ol>
+<li>主题安装<br>为了使博客不太难看，我们需要安装一个主题，切换至刚刚生成的Hexo 目录，安装主题<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ cd username.github.io</div><div class="line">$ git clone https://github.com/iissnan/hexo-theme-next themes/next</div></pre></td></tr></table></figure>
+这里选了一个极简的主题，也是Hexo众多主题中最受欢迎的一个。上面出现的喵神的主题 在这里。Hexo也有更多主题供你选择。</li>
+<li>基础配置<br>打开username.github.io/_config.yml修改几个键值对，下面把几个必须设置的列出来按需求修改，记得保存。更多设置…<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">title: dimsky 的 9 维空间 //你博客的名字</div><div class="line">author: dimsky //你的名字</div><div class="line">language: zh-Hans //语言 中文</div><div class="line">theme: next //刚刚安装的主题名称</div><div class="line">deploy:</div><div class="line">    type: git //使用Git 发布</div><div class="line">    repo: https://github.com/username/username.github.io.git // 刚创建的Github仓库</div></pre></td></tr></table></figure></li>
+<li>主题配置<br>主题配置文件在username.github.io/themes/next/_config.yml中修改，这里略过。设置详情可查看：<a href="http://theme-next.iissnan.com/getting-started.html#theme-settings" target="_blank" rel="external">http://theme-next.iissnan.com/getting-started.html#theme-settings</a></li>
+</ol>
+<h2 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h2><p>所有基础框架都已经创建完成，接下来可以开始写你的第一篇博客了<br>在username.github.io/source/_posts下创建你的第一个博客吧，例如，创建一个名为FirstNight.md的文件，用Markdown大肆发挥吧，注意保存。<br>如：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">title: 欢迎来到一个人的凌晨的空间</div><div class="line">date: 1468741925157</div><div class="line">---</div><div class="line">这是一个随手笔记的博客，里面都是我个人在平常遇到的问题的解决办法，和一些实用技巧，以及一些琐事。</div></pre></td></tr></table></figure></p>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ hexo s</div></pre></td></tr></table></figure>
+<p>测试服务启动，你可以在浏览器中输入<code>https://localhost:4000</code><em>（不行的话输入<code>127.0.0.1:4000</code>）</em>就可以访问了。</p>
+<h2 id="安装hexo-deployer-git自动部署发布工具"><a href="#安装hexo-deployer-git自动部署发布工具" class="headerlink" title="安装hexo-deployer-git自动部署发布工具"></a>安装hexo-deployer-git自动部署发布工具</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<h2 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h2><p>测试没问题后，我们就生成静态网页文件发布至我们的Github pages 中。<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</div></pre></td></tr></table></figure><br>如果这是你的第一次，终端会让你输入Github 的邮箱和密码，正确输入后，骚等片刻，就会把你的博客上传至Github 了。以后在每次把博客写完后，执行一下这个命令就可以直接发布了，灰常苏胡。</p>
+<h2 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h2><p>是不是很快，恭喜你能走到这一步，你的博客已经完成了，在浏览器中输入 <code>https://username.github.io</code> 就能够访问了。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo部署/" rel="tag">#hexo部署</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/16/hello-world/" rel="next" title="欢迎来到一个人的凌晨的空间">
+                <i class="fa fa-chevron-left"></i> 欢迎来到一个人的凌晨的空间
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/07/17/hexo-2/" rel="prev" title="各种hexo使用技巧">
+                各种hexo使用技巧 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/my.png"
+               alt="一个人的凌晨" />
+          <p class="site-author-name" itemprop="name">一个人的凌晨</p>
+          <p class="site-description motion-element" itemprop="description">这是一个随手笔记博客</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#创建Github-域名和空间"><span class="nav-number">1.</span> <span class="nav-text">创建Github 域名和空间</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#注册"><span class="nav-number">1.1.</span> <span class="nav-text">注册</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建仓库"><span class="nav-number">1.2.</span> <span class="nav-text">创建仓库</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Git"><span class="nav-number">2.1.</span> <span class="nav-text">安装Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Nodejs"><span class="nav-number">2.2.</span> <span class="nav-text">安装Nodejs</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#nvm的安装"><span class="nav-number">2.2.1.</span> <span class="nav-text">nvm的安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#npm的安装"><span class="nav-number">2.2.2.</span> <span class="nav-text">npm的安装</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Hexo"><span class="nav-number">2.3.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#编写，发布"><span class="nav-number">3.</span> <span class="nav-text">编写，发布</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建博客"><span class="nav-number">3.1.</span> <span class="nav-text">创建博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更改配置"><span class="nav-number">3.2.</span> <span class="nav-text">更改配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#写文章"><span class="nav-number">3.3.</span> <span class="nav-text">写文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试"><span class="nav-number">3.4.</span> <span class="nav-text">测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装hexo-deployer-git自动部署发布工具"><span class="nav-number">3.5.</span> <span class="nav-text">安装hexo-deployer-git自动部署发布工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发布"><span class="nav-number">3.6.</span> <span class="nav-text">发布</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#完成"><span class="nav-number">3.7.</span> <span class="nav-text">完成</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">一个人的凌晨</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
