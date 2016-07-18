@@ -5,7 +5,7 @@
     
     <entry>
       <title><![CDATA[各种hexo使用技巧]]></title>
-      <url>http://yoursite.com/2016/07/17/hexo-2/</url>
+      <url>/2016/07/17/hexo-2/</url>
       <content type="html"><![CDATA[<p>完善我们的hexo。<br><a id="more"></a></p>
 <h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><p><a href="http://www.tuicool.com/articles/NneMnuF" target="_blank" rel="external">玩转hexo博客之next</a><br><a href="http://chenall.net/post/hexo_theme_chenall/" target="_blank" rel="external">Hexo 模块化主题</a><br><a href="http://blog.csdn.net/u011001084/article/details/51253928" target="_blank" rel="external">hexo使用技巧</a><br><a href="http://www.tuicool.com/articles/I36zYr" target="_blank" rel="external">hexo命令及Markdown语法</a><br><a href="http://www.cnblogs.com/rossoneri/p/4446440.html" target="_blank" rel="external">http://www.tuicool.com/articles/I36zYr</a></p>
 ]]></content>
@@ -13,7 +13,7 @@
     
     <entry>
       <title><![CDATA[hexo部署]]></title>
-      <url>http://yoursite.com/2016/07/17/hexo-1/</url>
+      <url>/2016/07/17/hexo-1/</url>
       <content type="html"><![CDATA[<p>开始我们的hexo之旅。<br><a id="more"></a><br>原文：<a href="http://www.chinaz.com/web/2016/0419/523442.shtml" target="_blank" rel="external">5分钟 搭建免费个人博客</a></p>
 <h1 id="创建Github-域名和空间"><a href="#创建Github-域名和空间" class="headerlink" title="创建Github 域名和空间"></a>创建Github 域名和空间</h1><h2 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h2><p>首先你需要注册一个Github账号，已有的可以下翻去<strong>1.2创建仓库</strong>，注意username，这会影响到你的域名，你的域名将会是 username.github.io ，所以认真的取个名字吧。<br><img src="/images/hexo-build-1.png" alt="创建github帐号"><br>注册过程可能需要验证你的邮箱，其他就不在赘述。</p>
 <h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>然后需要创建一个仓库(repository) 来存储我们的网站，点击首页任意位置出现的 New repository按钮创建仓库, Respository name 中的username.github.io 的username 一定与前面的Owner 一致，记住你的username下面会用到。<br><img src="/images/hexo-build-2.png" alt="创建github仓库"><br>第一步就已经完成了，下面是安装。<br><strong>注：</strong>相关网站建设技巧阅读请移步到建站教程频道。<a href="http://jingyan.baidu.com/article/b907e627d3c1d546e7891ceb.html" target="_blank" rel="external">Github如何创建项目仓库_百度经验</a></p>
@@ -61,7 +61,7 @@
     
     <entry>
       <title><![CDATA[欢迎来到一个人的凌晨的空间]]></title>
-      <url>http://yoursite.com/2016/07/16/hello-world/</url>
+      <url>/2016/07/16/hello-world/</url>
       <content type="html"><![CDATA[<p>这是一个随手笔记的博客，里面都是我个人在平常遇到的问题的解决办法，和一些实用技巧，以及一些琐事。</p>
 ]]></content>
     </entry>
