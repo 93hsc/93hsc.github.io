@@ -49,7 +49,7 @@ $('#start-btn').on('touchend',function(){
     },500);
 });
 
-// ��ҳ��Ƶ
+// 首页视频
 var player1 = null;
 $('.vid-btn').on('touchend',function(){
     $('#pop-video-box').show();
@@ -64,9 +64,9 @@ $('.vid-btn').on('touchend',function(){
             height: 240,
             video: video1,
             modId: 'pop-video',
-            pic: '',        //��Ƶ������ַ
-            vodFlashSkin: 'http://imgcache.qq.com/minivideo_v1/vd/res/skins/TencentPlayerMiniSkin.swf',  //����Ƥ��        
-            autoplay: true   //�Ƿ��Զ�����
+            pic: '',        //视频封面地址
+            vodFlashSkin: 'http://imgcache.qq.com/minivideo_v1/vd/res/skins/TencentPlayerMiniSkin.swf',  //精简皮肤        
+            autoplay: true   //是否自动播放
         });
     } 
 });
@@ -75,7 +75,7 @@ $('#pop-video-box').find('.close').on('touchend',function(){
     player1.pause();
 });
 
-// �����¼�
+// 滑屏事件
 function slideCont(){
     var pageIndex = 0,
         $aPage = $('#main .page'),
@@ -162,9 +162,9 @@ function slideCont(){
                     height: 145,
                     video: video,
                     modId: 'videoCon',
-                    pic: '',        //��Ƶ������ַ
-                    vodFlashSkin: 'http://imgcache.qq.com/minivideo_v1/vd/res/skins/TencentPlayerMiniSkin.swf',  //����Ƥ��        
-                    autoplay: true   //�Ƿ��Զ�����
+                    pic: '',        //视频封面地址
+                    vodFlashSkin: 'http://imgcache.qq.com/minivideo_v1/vd/res/skins/TencentPlayerMiniSkin.swf',  //精简皮肤        
+                    autoplay: true   //是否自动播放
                 });
             } else{
                 $('#videoCon').show();
