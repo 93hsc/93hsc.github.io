@@ -1,0 +1,818 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="PC,移动端,html,css,js,h5,技巧," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="前端页面出现的各种问题和解决方法，以及一些实用技巧。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端小技巧">
+<meta property="og:url" content="/2016/08/06/pcSkill/index.html">
+<meta property="og:site_name" content="一个人的凌晨">
+<meta property="og:description" content="前端页面出现的各种问题和解决方法，以及一些实用技巧。">
+<meta property="og:updated_time" content="2016-08-06T10:45:42.906Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="前端小技巧">
+<meta name="twitter:description" content="前端页面出现的各种问题和解决方法，以及一些实用技巧。">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6307948732021212000,
+      author: 'Death'
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="/2016/08/06/pcSkill/"/>
+
+  <title> 前端小技巧 - 一个人的凌晨 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?b893b8ec5b51f2b28b0bb68e6dfe9e1b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <!-- <div class="headband"></div> -->
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">一个人的凌晨</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                前端小技巧
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-06T17:00:03+08:00" content="2016-08-06">
+              2016-08-06
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技巧/" itemprop="url" rel="index">
+                    <span itemprop="name">技巧</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>前端页面出现的各种问题和解决方法，以及一些实用技巧。<br><a id="more"></a></p>
+<h1 id="HTML部分"><a href="#HTML部分" class="headerlink" title="HTML部分"></a>HTML部分</h1><h2 id="针对IE版本"><a href="#针对IE版本" class="headerlink" title="针对IE版本"></a>针对IE版本</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&lt;!--[if !IE]&gt; 所有的IE可识别 &lt;![endif]--&gt;</div><div class="line">&lt;!--[if IE 6]&gt; 仅IE6可识别 &lt;!-[endif]--&gt;</div><div class="line">&lt;!--[if lt IE 6]&gt; IE6以以下版本可识别 &lt;![endif]--&gt;</div><div class="line">&lt;!--[if gte IE 6]&gt; IE6以及IE6以上版本可识别 &lt;![endif]--&gt;</div><div class="line">&lt;!--[if IE 7]&gt; 仅IE7可识别 &lt;![endif]--&gt;</div><div class="line">&lt;!--[if lt IE 7]&gt; IE7以及IE7以下版本可识别 &lt;![endif]--&gt;</div><div class="line">&lt;!--[if gte IE 7]&gt; IE7以及IE7以上版本可识别 &lt;![endif]--&gt;</div><div class="line">&lt;!--[if IE 8]&gt; 仅IE8可识别 &lt;![endif]--&gt;</div><div class="line">&lt;!--[if IE 9]&gt; 仅IE9可识别 &lt;![endif]--&gt;</div></pre></td></tr></table></figure>
+<h2 id="以当前最高标准模式显示页面"><a href="#以当前最高标准模式显示页面" class="headerlink" title="以当前最高标准模式显示页面"></a>以当前最高标准模式显示页面</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;/&gt;</div></pre></td></tr></table></figure>
+<h1 id="CSS部分"><a href="#CSS部分" class="headerlink" title="CSS部分"></a>CSS部分</h1><h2 id="页面最小宽度"><a href="#页面最小宽度" class="headerlink" title="页面最小宽度"></a>页面最小宽度</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">min-height:1000px; _width:expression((document.documentElement.clientWidth||document.body.clientWidth)&lt;1000?&quot;1000px&quot;:&quot;&quot;);</div></pre></td></tr></table></figure>
+<h2 id="解决IE6-7a标签绝对定位之后不存在的问题"><a href="#解决IE6-7a标签绝对定位之后不存在的问题" class="headerlink" title="解决IE6,7a标签绝对定位之后不存在的问题"></a>解决IE6,7a标签绝对定位之后不存在的问题</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">a&#123;background: url(about:blank);&#125;</div></pre></td></tr></table></figure>
+<h2 id="单行文字超出显示省略号"><a href="#单行文字超出显示省略号" class="headerlink" title="单行文字超出显示省略号"></a>单行文字超出显示省略号</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">text-overflow: ellipsis; white-space: nowrap; overflow: hidden;</div></pre></td></tr></table></figure>
+<h2 id="多行文字超出显示省略号仅限于支持css3的浏览器版本"><a href="#多行文字超出显示省略号仅限于支持css3的浏览器版本" class="headerlink" title="多行文字超出显示省略号仅限于支持css3的浏览器版本"></a>多行文字超出显示省略号<em>仅限于支持css3的浏览器版本</em></h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">display: -webkit-box; text-overflow: ellipsis; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;</div></pre></td></tr></table></figure>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">宋体：&apos;\5B8B\4F53&apos;</div><div class="line">微软雅黑：&apos;\5FAE\8F6F\96C5\9ED1&apos;</div></pre></td></tr></table></figure>
+<h2 id="css3穿透事件"><a href="#css3穿透事件" class="headerlink" title="css3穿透事件"></a>css3穿透事件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">pointer-events: auto | none;</div></pre></td></tr></table></figure>
+<h2 id="兼容IE的CSS三角"><a href="#兼容IE的CSS三角" class="headerlink" title="兼容IE的CSS三角"></a>兼容IE的CSS三角</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">position:absolute;</div><div class="line">top:10px;</div><div class="line">left:0px;</div><div class="line">border-style:solid;</div><div class="line">border-width:50px;</div><div class="line">border-color:transparent transparent transparent #fff;/*上边框设置想要的颜色*/</div><div class="line">height:0;</div><div class="line">width:0;</div><div class="line">font-size:0;</div><div class="line">_border-color:tomato tomato tomato #fff; /*边框透明色 For IE6-*/</div><div class="line">_filter:chroma(color=tomato);/*边框透明色 For IE6-*/</div></pre></td></tr></table></figure>
+<h2 id="改变input的placeholder的颜色"><a href="#改变input的placeholder的颜色" class="headerlink" title="改变input的placeholder的颜色"></a>改变input的placeholder的颜色</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">input[placeholder],</div><div class="line">::-webkit-input-placeholder&#123; color: #fff;&#125;</div></pre></td></tr></table></figure>
+<h2 id="图片变成黑白"><a href="#图片变成黑白" class="headerlink" title="图片变成黑白"></a>图片变成黑白</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); filter: grayscale(100%); filter: gray;</div></pre></td></tr></table></figure>
+<h2 id="公共样式"><a href="#公共样式" class="headerlink" title="公共样式"></a>公共样式</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">.none&#123;display: none;&#125;</div><div class="line">.db&#123;display: block;&#125;</div><div class="line">.tl&#123;text-align: left;&#125;</div><div class="line">.txc&#123;text-align: center;&#125;</div><div class="line">.fl&#123;float: left;&#125;</div><div class="line">.fr&#123;float: right;&#125;</div><div class="line">.bc&#123;margin-left: auto;margin-right: auto&#125;</div><div class="line">.pr&#123;position: relative;&#125;</div><div class="line">.pa&#123;position: absolute;&#125;</div><div class="line">.ovh&#123;overflow: hidden;&#125;</div><div class="line">.ht&#123;display: block;overflow: hidden;text-indent: -9999em;&#125;</div><div class="line">.p-none&#123;pointer-events: none;&#125;</div><div class="line">.clearfix:after,.clearfix:before&#123;content: &quot;&quot;;display: table;&#125;</div><div class="line">.clearfix:after&#123;clear: both;&#125;</div><div class="line">.clearfix&#123;*zoom: 1;&#125;</div></pre></td></tr></table></figure>
+<h1 id="JS部分"><a href="#JS部分" class="headerlink" title="JS部分"></a>JS部分</h1><h2 id="兼容各种浏览器版本的MP3音频插入方法"><a href="#兼容各种浏览器版本的MP3音频插入方法" class="headerlink" title="兼容各种浏览器版本的MP3音频插入方法"></a>兼容各种浏览器版本的MP3音频插入方法</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">var ua = navigator.userAgent.toLowerCase(),</div><div class="line">	sAudio = null;</div><div class="line">if(ua.match(/msie ([\d.]+)/))&#123;</div><div class="line">    sAudio = &apos;&lt;object classid=&quot;clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95&quot;&gt;&lt;param name=&quot;AutoStart&quot; loop=&quot;false&quot; value=&quot;1&quot; /&gt;&lt;param name=&quot;Src&quot; value=&quot;example/mp3.mp3&quot; /&gt;&lt;/object&gt;&apos;;</div><div class="line">&#125;else if(ua.match(/firefox\/([\d.]+)/))&#123;</div><div class="line">    sAudio = &apos;&lt;embed src=&quot;example/mp3.mp3&quot; type=&quot;audio/mp3&quot; autoplay=&quot;autoplay&quot; hidden=&quot;true&quot; loop=&quot;false&quot; mastersound&gt;&lt;/embed&gt;&apos;;</div><div class="line">&#125;else if(ua.match(/chrome\/([\d.]+)/))&#123;</div><div class="line">    sAudio = &apos;&lt;audio src=&quot;example/mp3.mp3&quot; type=&quot;audio/mp3&quot; autoplay=&quot;autoplay&quot; hidden=&quot;true&quot; loop=&quot;false&quot;&gt;&lt;/audio&gt;&apos;;</div><div class="line">&#125;else if(ua.match(/opera.([\d.]+)/))&#123;</div><div class="line">    sAudio = &apos;&lt;embed src=&quot;example/mp3.mp3&quot; hidden=&quot;true&quot; autoplay=&quot;autoplay&quot; loop=&quot;false&quot;&gt;&lt;noembed&gt;&lt;bgsounds src=&quot;example/mp3.mp3&quot;&gt;&lt;/noembed&gt;&apos;;</div><div class="line">&#125;else if(ua.match(/version\/([\d.]+).*safari/))&#123;</div><div class="line">    sAudio = &apos;&lt;audio src=&quot;example/mp3.mp3&quot; type=&quot;audio/mp3&quot; autoplay=&quot;autoplay&quot; hidden=&quot;true&quot; loop=&quot;false&quot;&gt;&lt;/audio&gt;&apos;;</div><div class="line">&#125;else &#123;</div><div class="line">    sAudio = &apos;&lt;embed src=&quot;example/mp3.mp3&quot; type=&quot;audio/mp3&quot; autoplay=&quot;autoplay&quot; hidden=&quot;true&quot; loop=&quot;false&quot; mastersound&gt;&lt;/embed&gt;&apos;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="js脚本库"><a href="#js脚本库" class="headerlink" title="js脚本库"></a>js脚本库</h2><h3 id="addClass"><a href="#addClass" class="headerlink" title="addClass"></a>addClass</h3><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">function addClass(obj, cls)&#123;</div><div class="line">    var obj_class = obj.className,//获取 class 内容.</div><div class="line">    blank = (obj_class != &apos;&apos;) ? &apos; &apos; : &apos;&apos;;//判断获取到的 class 是否为空, 如果不为空在前面加个&apos;空格&apos;.</div><div class="line">    added = obj_class + blank + cls;//组合原来的 class 和需要添加的 class.</div><div class="line">    obj.className = added;//替换原来的 class.</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="addClass-1"><a href="#addClass-1" class="headerlink" title="addClass"></a>addClass</h3><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">function addClass(obj, cls)&#123;</div><div class="line">    var obj_class = obj.className,//获取 class 内容.</div><div class="line">    blank = (obj_class != &apos;&apos;) ? &apos; &apos; : &apos;&apos;;//判断获取到的 class 是否为空, 如果不为空在前面加个&apos;空格&apos;.</div><div class="line">    added = obj_class + blank + cls;//组合原来的 class 和需要添加的 class.</div><div class="line">    obj.className = added;//替换原来的 class.</div><div class="line">&#125;</div><div class="line">function addClass(element, value) &#123;</div><div class="line">    if (!element.className) &#123;</div><div class="line">	element.className = value;</div><div class="line">    &#125; else &#123;</div><div class="line">        var newClassName = element.className;</div><div class="line">		newClassName += &quot; &quot;;</div><div class="line">		newClassName += value;</div><div class="line">		element.className = newClassName;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="hasClass"><a href="#hasClass" class="headerlink" title="hasClass"></a>hasClass</h3><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">function hasClass(obj, cls)&#123;</div><div class="line">    var obj_class = obj.className,//获取 class 内容.</div><div class="line">    obj_class_lst = obj_class.split(/\s+/);//通过split空字符将cls转换成数组.</div><div class="line">    x = 0;</div><div class="line">    for(x in obj_class_lst) &#123;</div><div class="line">        if(obj_class_lst[x] == cls) &#123;//循环数组, 判断是否包含cls</div><div class="line">            return true;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    return false;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="removeClass"><a href="#removeClass" class="headerlink" title="removeClass"></a>removeClass</h3><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">function removeClass(obj, cls)&#123;</div><div class="line">    var obj_class = &apos; &apos;+obj.className+&apos; &apos;;//获取 class 内容, 并在首尾各加一个空格. ex) &apos;abc        bcd&apos; -&gt; &apos; abc        bcd &apos;</div><div class="line">    obj_class = obj_class.replace(/(\s+)/gi, &apos; &apos;),//将多余的空字符替换成一个空格. ex) &apos; abc        bcd &apos; -&gt; &apos; abc bcd &apos;</div><div class="line">    removed = obj_class.replace(&apos; &apos;+cls+&apos; &apos;, &apos; &apos;);//在原来的 class 替换掉首尾加了空格的 class. ex) &apos; abc bcd &apos; -&gt; &apos;bcd &apos;</div><div class="line">    removed = removed.replace(/(^\s+)|(\s+$)/g, &apos;&apos;);//去掉首尾空格. ex) &apos;bcd &apos; -&gt; &apos;bcd&apos;</div><div class="line">    obj.className = removed;//替换原来的 class.</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="兼容的getElementsByClassName"><a href="#兼容的getElementsByClassName" class="headerlink" title="兼容的getElementsByClassName"></a>兼容的getElementsByClassName</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">function getElementsByClassName(node, classname) &#123;</div><div class="line">    // 存在着用当前方法</div><div class="line">    if(node.getElementsByClassName) &#123;</div><div class="line">	return node.getElementsByClassName(classname);</div><div class="line">    &#125; else &#123;</div><div class="line">        var results = new Array();</div><div class="line">        var elems = node.getElementsByTagName(&quot;*&quot;);</div><div class="line">	for (var i=0; i &lt; elems.length; i++) &#123;</div><div class="line">	    if (elems[i].className.indexOf(classname) != -1) &#123;</div><div class="line">                results[results.length] = elems[i];</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        return results;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="获得任意样式的值"><a href="#获得任意样式的值" class="headerlink" title="获得任意样式的值"></a>获得任意样式的值</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">function getStyle(obj, name) &#123;</div><div class="line">	if (obj.currentStyle) &#123;</div><div class="line">		return obj.currentStyle[name];</div><div class="line">	&#125; else &#123;</div><div class="line">		return getComputed(obj, false)[name];</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="JS获取对象属性值的方法"><a href="#JS获取对象属性值的方法" class="headerlink" title="JS获取对象属性值的方法"></a>JS获取对象属性值的方法</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">第一种方法：obj.style</div><div class="line">第二种方法：obj[&apos;style&apos;]</div></pre></td></tr></table></figure>
+<h2 id="手机号码正则"><a href="#手机号码正则" class="headerlink" title="手机号码正则"></a>手机号码正则</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">if( !/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d&#123;8&#125;$/i.test(phonenumber) )&#123; </div><div class="line">	alert(&quot;手机号码格式有误！请重新填写！&quot;); </div><div class="line">	return false; </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="效果类"><a href="#效果类" class="headerlink" title="效果类"></a>效果类</h1><h2 id="隐藏滚动条滚动"><a href="#隐藏滚动条滚动" class="headerlink" title="隐藏滚动条滚动"></a>隐藏滚动条滚动</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt; </div><div class="line">&lt;html&gt; </div><div class="line">&lt;head&gt; </div><div class="line">	&lt;title&gt;Test1-模块-CSS实现无滚动条滚动&lt;/title&gt; </div><div class="line">	&lt;meta charset=&quot;UTF-8&quot; &gt;</div><div class="line">	&lt;style&gt;</div><div class="line">		.wrap&#123;</div><div class="line">			width:500px;</div><div class="line">			height:500px;</div><div class="line">			overflow:hidden;</div><div class="line">		&#125;</div><div class="line">		.box1&#123;</div><div class="line">			width:520px;</div><div class="line">			height:500px;</div><div class="line">			overflow-y:scroll;</div><div class="line">			overflow-x:hidden;</div><div class="line">			background-color:#eee;</div><div class="line">		&#125;</div><div class="line">		.box2&#123;</div><div class="line">			height:1000px;</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		/*.wrap&#123;</div><div class="line">			width:500px;</div><div class="line">			height:500px;</div><div class="line">			overflow:hidden;</div><div class="line">		&#125;</div><div class="line">		.box1&#123;</div><div class="line">			width:500px;</div><div class="line">			height:500px;</div><div class="line">			margin:0 20px;</div><div class="line">			overflow-x:scroll;</div><div class="line">			overflow-y:hidden;</div><div class="line">			background-color:#eee;</div><div class="line">		&#125;</div><div class="line">		.box2&#123;</div><div class="line">			width: 1000px;</div><div class="line">		&#125;*/</div><div class="line">	&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;div class=&quot;wrap&quot;&gt;</div><div class="line">	&lt;div class=&quot;box1&quot;&gt;</div><div class="line">		&lt;div class=&quot;box2&quot;&gt;</div><div class="line">			&lt;p&gt;box1和box2实现在一定高度的节点(box1)里展示大于该高度的节点(box2)&lt;/p&gt;</div><div class="line">			&lt;p&gt;box2里面滚动了多少可以通过box1.scrollTop来获取&lt;/p&gt;</div><div class="line">			&lt;p style=&quot;margin-bottom:850px;&quot;&gt;wrap作为最外层的节点，作用是用来隐藏滚动条的&lt;/p&gt;</div><div class="line">			&lt;p id=&quot;end&quot;&gt;The-end&lt;/p&gt;</div><div class="line">		&lt;/div&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<h2 id="文字扫光"><a href="#文字扫光" class="headerlink" title="文字扫光"></a>文字扫光</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&lt;!doctype html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">&lt;title&gt;无标题文档&lt;/title&gt;</div><div class="line">&lt;style type=&quot;text/css&quot; media=&quot;all&quot;&gt;</div><div class="line">html,body&#123; background:#000;&#125;</div><div class="line">p.shine&#123;width: 700px;&#125;</div><div class="line">.shine&#123;background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;</div><div class="line">    -webkit-background-size: 125px;color: rgba(255, 255, 255, 0.1);-webkit-background-clip: text;font-family:&quot;微软雅黑&quot;;font-size:60px;font-weight:bold;display:block;position:absolute;left:50%; margin-left:-350px;top:50%; margin-top:-100px;-webkit-animation-name: shine;-webkit-animation-duration: 2s;-webkit-animation-iteration-count: infinite;&#125;</div><div class="line">@-webkit-keyframes shine&#123;</div><div class="line">    0%&#123;background-position: top left;&#125;</div><div class="line">    100%&#123;background-position: top right;&#125;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;p class=&quot;shine&quot;&gt;Welcome to 5iweb&lt;/p&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<h2 id="翻牌效果"><a href="#翻牌效果" class="headerlink" title="翻牌效果"></a>翻牌效果</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;meta charset=&quot;gb2312&quot; /&gt;</div><div class="line">&lt;meta name=&quot;robots&quot; content=&quot;all&quot; /&gt;</div><div class="line">&lt;meta name=&quot;Copyright&quot; content=&quot;&quot; /&gt;</div><div class="line">&lt;meta name=&quot;Description&quot; content=&quot;&quot; /&gt;</div><div class="line">&lt;meta name=&quot;Keywords&quot; content=&quot;&quot; /&gt;</div><div class="line">&lt;title&gt;&lt;/title&gt;</div><div class="line">&lt;style&gt;</div><div class="line">* &#123; margin: 0; padding: 0;&#125;</div><div class="line">body &#123; font: normal 14px/1.6 &quot;Microsoft Yahei&quot;,&quot;simsun&quot;; color: #fff;&#125;</div><div class="line">ol,ul &#123; list-style: none;&#125;</div><div class="line">img &#123; border: none; display: block;&#125;</div><div class="line">.clearfix:after &#123;content:&quot;.&quot;; display:block; height:0; clear:both; visibility:hidden&#125;</div><div class="line">.clearfix&#123;*zoom:1&#125;</div><div class="line">.wap a:link,.wap a:visited&#123;text-decoration: none;&#125;.wap a:hover,.wap a:active&#123;text-decoration:none;&#125;</div><div class="line">.top-nav a:link,.top-nav a:visited&#123; color:#fff;&#125;.top-nav a:hover,.top-nav a:active&#123; color:#95ca07;&#125;</div><div class="line">.none&#123; display:none;&#125;.dis-il&#123; display:inline-block;&#125;.p-a&#123; position:absolute;&#125;.p-r&#123; position:relative;&#125;.f-l&#123; float: left;&#125;.f-r&#123; float: right;&#125;.ovh&#123; overflow: hidden;&#125;.ht&#123; display: block; text-indent: -9999em; overflow: hidden;&#125;</div><div class="line"></div><div class="line">body&#123;padding-top: 42px; line-height:24px;font-size:14px;  min-width:1000px;&#125;</div><div class="line">.wap&#123;width:100%;min-width:1000px;&#125;</div><div class="line"></div><div class="line">.card-box&#123; padding: 0 0 50px 76px;&#125;</div><div class="line">.card-box li&#123; width: 203px; margin-right: 12px; perspective: 1000; -webkit-perspective: 1000px; -moz-perspective: 1000px; -ms-perspective: 1000px; -o-perspective: 1000px; perspective: 1000px;&#125;</div><div class="line">.card-box a&#123; position: relative; display: block; width: 203px; height: 277px; overflow: hidden; transition:transform 0.6s ease-out; transition: transform .5s ease-in-out; -webkit-transition: transform .5s ease-in-out; -moz-transition: transform .5s ease-in-out; -ms-transition: transform .5s ease-in-out; -o-transition: transform .5s ease-in-out; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -ms-transform-style: preserve-3d; -o-transform-style: preserve-3d; transform-style: preserve-3d;&#125;</div><div class="line">.card-box a img&#123; backface-visibility: hidden;transition: 0.6s ease-out;-webkit-transition: .6s ease-out; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -ms-transform-style: preserve-3d;-o-transform-style: preserve-3d;transform-style: preserve-3d; position: absolute;top: 0;left: 0;&#125;</div><div class="line">.card-box .card-1&#123; z-index: 2;transform: rotateY(0deg);transform: rotateY(0deg); -webkit-transform: rotateY(0deg);-moz-transform: rotateY(0deg);-ms-transform: rotateY(0deg);-o-transform: rotateY(0deg);&#125;</div><div class="line">.card-box .card-2&#123; z-index: 1;transform: rotateY(-180deg);transform: rotateY(-180deg);-webkit-transform: rotateY(-180deg);-moz-transform: rotateY(-180deg);</div><div class="line">-ms-transform: rotateY(-180deg);-o-transform: rotateY(-180deg);&#125;</div><div class="line">.card-box .active .card-1&#123; transform: rotateY(180deg);-webkit-transform: rotateY(180deg);-moz-transform: rotateY(180deg);-ms-transform: rotateY(180deg);-o-transform: rotateY(180deg); z-index:1;&#125;</div><div class="line">.card-box .active .card-2&#123; transform: rotateY(0deg); -webkit-transform: rotateY(0deg);-moz-transform: rotateY(0deg);-ms-transform: rotateY(0deg);-o-transform: rotateY(0deg); z-index:2;&#125;</div><div class="line">&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;div class=&quot;wap&quot;&gt;</div><div class="line">	&lt;ul class=&quot;card-box clearfix&quot; id=&quot;cardBox&quot;&gt;</div><div class="line">		&lt;li class=&quot;f-l&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;&lt;img src=&quot;ossweb-img/card-cover.png&quot; alt=&quot;card-cover&quot; class=&quot;card-1&quot;&gt;&lt;img src=&quot;ossweb-img/card-1.png&quot; alt=&quot;奖品&quot; class=&quot;card-2&quot;&gt;&lt;/a&gt;&lt;/li&gt;</div><div class="line">		&lt;li class=&quot;f-l&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;&lt;img src=&quot;ossweb-img/card-cover.png&quot; alt=&quot;card-cover&quot; class=&quot;card-1&quot;&gt;&lt;img src=&quot;ossweb-img/card-3.png&quot; alt=&quot;奖品&quot; class=&quot;card-2&quot;&gt;&lt;/a&gt;&lt;/li&gt;</div><div class="line">		&lt;li class=&quot;f-l&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;&lt;img src=&quot;ossweb-img/card-cover.png&quot; alt=&quot;card-cover&quot; class=&quot;card-1&quot;&gt;&lt;img src=&quot;ossweb-img/card-5.png&quot; alt=&quot;奖品&quot; class=&quot;card-2&quot;&gt;&lt;/a&gt;&lt;/li&gt;</div><div class="line">		&lt;li class=&quot;f-l&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;&lt;img src=&quot;ossweb-img/card-cover.png&quot; alt=&quot;card-cover&quot; class=&quot;card-1&quot;&gt;&lt;img src=&quot;ossweb-img/card-8.png&quot; alt=&quot;奖品&quot; class=&quot;card-2&quot;&gt;&lt;/a&gt;&lt;/li&gt;</div><div class="line">	&lt;/ul&gt;	</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;script&gt;</div><div class="line">	var aA = document.getElementById(&apos;cardBox&apos;).getElementsByTagName(&apos;a&apos;);</div><div class="line">	for (var i = 0; i &lt; aA.length; i++) &#123;</div><div class="line">		aA[i].index = i;</div><div class="line">		aA[i].onclick = function ()&#123;</div><div class="line">			this.className = &apos;active&apos;;	</div><div class="line">		&#125;;</div><div class="line">	&#125;;</div><div class="line">&lt;/script&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/PC/" rel="tag">#PC</a>
+          
+            <a href="/tags/移动端/" rel="tag">#移动端</a>
+          
+            <a href="/tags/html/" rel="tag">#html</a>
+          
+            <a href="/tags/css/" rel="tag">#css</a>
+          
+            <a href="/tags/js/" rel="tag">#js</a>
+          
+            <a href="/tags/h5/" rel="tag">#h5</a>
+          
+            <a href="/tags/技巧/" rel="tag">#技巧</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/19/hexo-3/" rel="next" title="给hexo添加搜索功能">
+                <i class="fa fa-chevron-left"></i> 给hexo添加搜索功能
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/my.png"
+               alt="一个人的凌晨" />
+          <p class="site-author-name" itemprop="name">一个人的凌晨</p>
+          <p class="site-description motion-element" itemprop="description">这是一个随手笔记博客</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.palwo.com/" title="朋沃科技有限公司" target="_blank">朋沃科技有限公司</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML部分"><span class="nav-number">1.</span> <span class="nav-text">HTML部分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#针对IE版本"><span class="nav-number">1.1.</span> <span class="nav-text">针对IE版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#以当前最高标准模式显示页面"><span class="nav-number">1.2.</span> <span class="nav-text">以当前最高标准模式显示页面</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS部分"><span class="nav-number">2.</span> <span class="nav-text">CSS部分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#页面最小宽度"><span class="nav-number">2.1.</span> <span class="nav-text">页面最小宽度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决IE6-7a标签绝对定位之后不存在的问题"><span class="nav-number">2.2.</span> <span class="nav-text">解决IE6,7a标签绝对定位之后不存在的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单行文字超出显示省略号"><span class="nav-number">2.3.</span> <span class="nav-text">单行文字超出显示省略号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多行文字超出显示省略号仅限于支持css3的浏览器版本"><span class="nav-number">2.4.</span> <span class="nav-text">多行文字超出显示省略号仅限于支持css3的浏览器版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字体"><span class="nav-number">2.5.</span> <span class="nav-text">字体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#css3穿透事件"><span class="nav-number">2.6.</span> <span class="nav-text">css3穿透事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#兼容IE的CSS三角"><span class="nav-number">2.7.</span> <span class="nav-text">兼容IE的CSS三角</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#改变input的placeholder的颜色"><span class="nav-number">2.8.</span> <span class="nav-text">改变input的placeholder的颜色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片变成黑白"><span class="nav-number">2.9.</span> <span class="nav-text">图片变成黑白</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公共样式"><span class="nav-number">2.10.</span> <span class="nav-text">公共样式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JS部分"><span class="nav-number">3.</span> <span class="nav-text">JS部分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#兼容各种浏览器版本的MP3音频插入方法"><span class="nav-number">3.1.</span> <span class="nav-text">兼容各种浏览器版本的MP3音频插入方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#js脚本库"><span class="nav-number">3.2.</span> <span class="nav-text">js脚本库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#addClass"><span class="nav-number">3.2.1.</span> <span class="nav-text">addClass</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#addClass-1"><span class="nav-number">3.2.2.</span> <span class="nav-text">addClass</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hasClass"><span class="nav-number">3.2.3.</span> <span class="nav-text">hasClass</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#removeClass"><span class="nav-number">3.2.4.</span> <span class="nav-text">removeClass</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#兼容的getElementsByClassName"><span class="nav-number">3.3.</span> <span class="nav-text">兼容的getElementsByClassName</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获得任意样式的值"><span class="nav-number">3.4.</span> <span class="nav-text">获得任意样式的值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JS获取对象属性值的方法"><span class="nav-number">3.5.</span> <span class="nav-text">JS获取对象属性值的方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#手机号码正则"><span class="nav-number">3.6.</span> <span class="nav-text">手机号码正则</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#效果类"><span class="nav-number">4.</span> <span class="nav-text">效果类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#隐藏滚动条滚动"><span class="nav-number">4.1.</span> <span class="nav-text">隐藏滚动条滚动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文字扫光"><span class="nav-number">4.2.</span> <span class="nav-text">文字扫光</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#翻牌效果"><span class="nav-number">4.3.</span> <span class="nav-text">翻牌效果</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">一个人的凌晨</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
